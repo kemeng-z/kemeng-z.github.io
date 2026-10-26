@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kemeng Zhai — Multimedia Designer based in Hong Kong, with experience in graphic design, content creation and UI/UX design.">
+<title>Kemeng Zhai — Design & Content</title>
+<style>
+:root{--paper:#f5f2eb;--ink:#343830;--muted:#6b6e64;--line:#d8d7cc;--green:#4f5d46;--wash:#e9e8df}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--green);outline-offset:6px}img{max-width:100%;display:block}::selection{background:#d8dfcc}
+.wrap{width:min(1180px,calc(100% - 100px));margin:auto}.site-header{background:var(--paper);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:98px}.wordmark{font-size:22px;font-weight:600;letter-spacing:-.7px}
+.nav-links{display:flex;align-items:center;gap:32px;font-size:13px}.nav-links a{padding:6px 0}.nav-links a:hover{color:var(--green)}
+.pages>.page{display:none;scroll-margin-top:110px}.pages>#work{display:block}.pages:has(>.page:target)>#work:not(:target){display:none}.pages>.page:target{display:block}
+
+.label{font-size:10px;font-weight:500;letter-spacing:1.7px;text-transform:uppercase;color:var(--muted)}.text-link{display:inline-flex;gap:18px;align-items:center;font-size:13px;border-bottom:1px solid #93998a;padding-bottom:3px}.text-link:hover{color:var(--green)}
+.button{display:inline-flex;background:var(--ink);color:var(--paper);gap:24px;align-items:center;padding:13px 20px;font-size:12px}.button:hover{background:var(--green)}
+h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5.1vw,66px);line-height:1.13;letter-spacing:-2.5px;margin-bottom:25px}h1 em,.serif{font-family:Georgia,serif;font-style:italic;font-weight:400}h2{font-size:31px;letter-spacing:-.9px;line-height:1.2}h3{font-size:24px;line-height:1.3;letter-spacing:-.5px}
+.home-hero{display:grid;grid-template-columns:1.6fr 1fr;gap:80px;align-items:center;padding:70px 0 66px}.home-hero .label{display:block;margin-bottom:23px}.hero-copy p{font-size:16px;color:var(--muted);max-width:600px;margin-bottom:27px}
+.hero-photo{position:relative;padding:0 17px 0 0}.hero-photo img{width:100%;height:330px;object-fit:cover;object-position:center 55%}.hero-photo figcaption{font-size:10px;color:var(--muted);margin-top:10px;text-align:right}figure{margin:0}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 30px;gap:20px}.section-head h2{font-size:26px;margin:0}
+.work-item{display:grid;grid-template-columns:1.4fr 1fr;gap:65px;align-items:center;margin-bottom:56px}.work-item.reverse{grid-template-columns:1fr 1.4fr}.work-item.reverse .work-cover{order:2}.work-item.reverse .work-copy{order:1}
+.work-cover{display:block;overflow:hidden;background:var(--wash);aspect-ratio:1.38}.work-cover>img{height:100%;width:100%;object-fit:cover;transition:transform .45s}.work-cover:hover>img{transform:scale(1.025)}
+.work-cover.vr>img{object-fit:contain;background:#e4e1d8}.work-cover.ello>img{object-fit:contain;padding:34px;background:#dcece5}.work-copy h3{font-size:35px;letter-spacing:-1px;margin:15px 0}.work-copy p{font-size:15px;color:var(--muted);margin-bottom:24px;max-width:390px}.work-copy .tags{font-size:11px;color:var(--muted);margin:-3px 0 19px}
+.poster-pair{display:flex;gap:22px;align-items:center;justify-content:center;background:#e7e5db;padding:32px;height:100%}.poster-pair img{width:43%;height:92%;object-fit:contain;filter:drop-shadow(0 7px 10px #00000012)}
+.expertise{padding:45px 0 60px;border-top:1px solid var(--line)}.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:45px;margin-top:27px}.expertise-grid h3{font-size:20px;margin-bottom:12px}.expertise-grid p{font-size:13px;color:var(--muted);margin:0}
+.page-heading{padding:58px 0 38px}.page-heading h1{margin:14px 0 20px}.page-heading .lede{font-size:17px;color:var(--muted);max-width:710px;margin:0}.back{font-size:12px;color:var(--muted);display:inline-block;margin-bottom:30px}.back:hover{text-decoration:underline}
+.case-top{display:flex;justify-content:space-between;align-items:end;gap:35px;padding-bottom:30px}.case-top h1{font-size:55px;margin:12px 0 0}.case-top .subtitle{color:var(--muted);font-size:13px;max-width:320px;margin-bottom:5px}
+.case-cover{display:block;width:100%;height:auto}.studio-hero{max-height:660px;object-fit:cover}.case-body{padding-bottom:30px}.case-intro{display:grid;grid-template-columns:1fr 1.6fr;gap:65px;margin:43px 0}.case-intro h3{font-size:29px;line-height:1.25;margin:0}.case-intro p{font-size:15px;color:var(--muted);margin:0 0 17px}
+.case-meta{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:25px;padding:23px 0;margin:0 0 35px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.case-meta dt{font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}.case-meta dd{font-size:12px;margin:7px 0 0}
+.case-gallery,.poster-gallery{display:grid;grid-template-columns:1fr 1fr;gap:30px}.case-gallery img{width:100%;height:auto}.poster-gallery{align-items:start;gap:42px 35px;max-width:960px;margin:auto}.poster-gallery img{width:100%;height:auto}.case-gallery figcaption,.poster-gallery figcaption{font-size:11px;color:var(--muted);margin-top:11px}
+.case-process{max-width:800px;margin:35px 0 0}.case-process h4{font-size:21px;margin:0 0 12px}.case-process p{font-size:15px;color:var(--muted);margin:0}.case-next{display:flex;justify-content:space-between;gap:25px;border-top:1px solid var(--line);padding:30px 0 50px;margin-top:40px}
+.studio-pair img{height:460px;object-fit:cover}.content-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:38px 0 20px}.content-notes h3{font-size:20px;margin-bottom:12px}.content-notes p{font-size:14px;color:var(--muted)}
+.visual-section{padding:32px 0 50px;border-top:1px solid var(--line)}.visual-section>p{color:var(--muted);max-width:680px}.visual-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.visual-photos img{width:100%;height:390px;object-fit:cover}.visual-photos figcaption{font-size:11px;color:var(--muted);margin-top:10px}
+.about-layout{display:grid;grid-template-columns:.9fr 1.4fr;gap:75px;padding-bottom:60px}.about-image img{width:100%;max-height:600px;object-fit:cover}.about-image figcaption{color:var(--muted);font-size:11px;margin-top:10px}.about-copy>p{font-size:17px;color:var(--muted)}.about-copy h2{font-size:27px;margin:32px 0 18px}.timeline{padding:18px 0;border-top:1px solid var(--line)}.timeline h3{font-size:17px;margin:0 0 4px}.timeline p{font-size:12px;color:var(--muted);margin:0}.skill-columns{display:grid;grid-template-columns:1fr 1fr;gap:30px}.skill-columns h3{font-size:18px;margin:0 0 10px}.skill-columns p{font-size:13px;color:var(--muted)}
+.contact-layout{padding:25px 0 100px;display:grid;grid-template-columns:1.4fr 1fr;gap:90px}.contact-email{font-size:clamp(23px,3.2vw,38px);letter-spacing:-1px;border-bottom:1px solid var(--muted);padding-bottom:8px;display:inline-block}.contact-note{color:var(--muted);max-width:540px;margin:25px 0}.contact-socials{display:flex;flex-direction:column;align-items:start;gap:18px}
+.site-footer{border-top:1px solid var(--line);margin-top:20px}.footer-content{display:flex;justify-content:space-between;gap:35px;padding:40px 0}.footer-content h2{font-size:27px;margin-bottom:14px}.footer-socials{display:flex;gap:25px;align-items:center;font-size:12px}.copyright{font-size:10px;color:var(--muted);padding-bottom:22px}.skip{position:absolute;top:-70px;background:var(--ink);color:white;padding:10px;z-index:10}.skip:focus{top:10px}
+@media(max-width:850px){.wrap{width:calc(100% - 48px)}.home-hero{gap:35px}.hero-photo img{height:280px}.work-item,.work-item.reverse{gap:35px}.work-copy h3{font-size:29px}.expertise-grid{gap:25px}.about-layout{gap:35px}.case-intro{gap:30px}.visual-photos img{height:300px}}
+@media(max-width:600px){.wrap{width:calc(100% - 36px)}.nav{min-height:92px;gap:15px;flex-wrap:wrap;padding:20px 0}.wordmark{font-size:20px}.nav-links{gap:21px;font-size:12px}.home-hero{grid-template-columns:1fr;padding:45px 0;gap:30px}.hero-photo{padding:0}.hero-photo img{height:300px}.home-hero h1{font-size:43px;letter-spacing:-1.8px}.hero-copy p{font-size:15px}.work-item,.work-item.reverse{grid-template-columns:1fr;gap:23px;margin-bottom:45px}.work-item.reverse .work-cover,.work-item.reverse .work-copy{order:initial}.work-copy h3{margin:10px 0;font-size:30px}.work-copy p{max-width:none;font-size:14px}.work-cover{aspect-ratio:1.3}.section-head h2{font-size:24px}.section-head .label{font-size:9px}.expertise-grid,.case-intro,.case-meta,.content-notes,.case-gallery,.poster-gallery,.about-layout,.contact-layout{grid-template-columns:1fr}.expertise-grid{gap:27px}.page-heading{padding:38px 0 28px}.page-heading h1{font-size:43px}.page-heading .lede{font-size:15px}.case-top{display:block}.case-top h1{font-size:43px}.case-top .subtitle{margin-top:16px}.case-intro{gap:18px;margin:30px 0}.case-intro h3{font-size:26px}.case-intro p{font-size:14px}.case-meta{gap:18px}.studio-pair img{height:auto}.visual-photos{grid-template-columns:1fr;gap:25px}.visual-photos img{height:auto;max-height:540px;object-fit:contain}.about-layout{gap:30px}.about-image img{max-height:420px}.contact-layout{gap:45px;padding-bottom:50px}.contact-email{font-size:24px}.footer-content{flex-direction:column;gap:22px}.footer-socials{flex-wrap:wrap}.case-next{font-size:12px}.poster-pair{padding:22px;gap:15px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Four-project homepage: image-led covers with internal case-study navigation. */
+.home-hero{display:block;max-width:850px;padding:65px 0 49px}.hero-copy p{max-width:650px}.home-hero h1{font-size:60px}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px 35px;margin-bottom:65px}
+.work-item,.work-item.reverse{display:flex;flex-direction:column;gap:23px;align-items:stretch;margin:0}.work-item.reverse .work-cover,.work-item.reverse .work-copy{order:initial}.work-cover{width:100%;aspect-ratio:1.42}.work-copy h3{font-size:29px;margin:9px 0 10px}.work-copy p{max-width:520px;font-size:14px;margin-bottom:16px}.work-copy .tags{margin:0 0 13px}.work-copy .label{font-size:9px}.work-copy h3 a:hover{color:var(--green)}
+@media(max-width:600px){.home-hero{padding:42px 0 35px}.home-hero h1{font-size:43px}.project-grid{grid-template-columns:1fr;gap:40px;margin-bottom:45px}.work-copy h3{font-size:28px}.nav{min-height:80px;flex-wrap:nowrap}.footer-socials{gap:18px}}
+
+@media print{.site-header,.site-footer,.back,.case-next{display:none}.page:target{display:block}.wrap{width:100%}}
+
+/* Full-width project rows with larger artwork and concise captions. */
+.project-grid{grid-template-columns:1fr;gap:64px}
+.work-item,.work-item.reverse{gap:25px}
+.work-cover{aspect-ratio:1.85}
+.work-cover.ello>img{padding:45px}
+.work-copy{display:grid;grid-template-columns:1fr 1fr;column-gap:60px;align-items:start}
+.work-copy>.label,.work-copy>h3,.work-copy>.tags{grid-column:1}
+.work-copy>h3{grid-row:2;margin:9px 0 12px;font-size:33px}
+.work-copy>.tags{grid-row:3;margin-bottom:0}
+.work-copy>p{grid-column:2;grid-row:1 / 3;max-width:530px;margin:0 0 14px}
+.work-copy>.text-link{grid-column:2;grid-row:3;justify-self:start}
+@media(max-width:600px){.project-grid{gap:42px}.work-cover{aspect-ratio:1.3}.work-cover.ello>img{padding:25px}.work-copy{display:block}.work-copy>h3{font-size:28px}.work-copy>.tags{margin-bottom:14px}.work-copy>p{margin-bottom:16px}}
+
+/* Studio links sit between the project title and disciplines. */
+.work-copy>.studio-links{grid-column:1;grid-row:3;display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 16px}
+.work-copy:has(>.studio-links)>.tags{grid-row:4}
+.work-copy:has(>.studio-links)>p{grid-row:1 / 4}
+.work-copy:has(>.studio-links)>.text-link{grid-row:4}
+
+/* Kemeng Studio: website, content and offline collaboration. */
+.studio-overview{max-width:760px;margin:24px 0 0;color:var(--muted);font-size:16px}
+.studio-chapter{padding:38px 0 42px;border-top:1px solid var(--line)}
+.studio-chapter-heading{max-width:760px;margin-bottom:30px}
+.studio-chapter-heading h2{margin:10px 0 16px;font-size:32px}
+.studio-chapter-heading p{color:var(--muted);margin-bottom:18px}
+.storefront-gallery{display:grid;grid-template-columns:minmax(0,4.012fr) minmax(0,1fr);gap:24px;align-items:start;padding:24px;background:var(--wash)}
+.storefront-gallery img{width:100%;height:auto;border:1px solid var(--line)}
+.storefront-gallery figcaption{font-size:11px;color:var(--muted);margin-top:12px}
+.studio-video-selections{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:24px}
+.studio-video-selection{min-width:0;padding:0;border:0}
+.studio-reel{display:block;width:100%;height:650px;border:1px solid var(--line);background:#fff;margin:20px 0 14px;border-radius:3px}
+@media(max-width:600px){.studio-reel{height:620px}}
+.studio-video-selection h3{font-size:23px;margin:10px 0}
+#studio .media-pending{font-size:12px;color:var(--muted);margin:0}
+@media(max-width:600px){.studio-overview{font-size:14px}.studio-chapter{padding:28px 0}.studio-chapter-heading h2{font-size:27px}.storefront-gallery{grid-template-columns:1fr;padding:16px;gap:26px}.storefront-mobile{max-width:240px;margin:0 auto}.studio-video-selections{grid-template-columns:1fr;gap:16px}}
+
+.amori-gallery{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.amori-gallery img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.amori-gallery figcaption{font-size:11px;color:var(--muted);margin-top:12px}
+@media(max-width:600px){.amori-gallery{grid-template-columns:1fr;gap:24px}}
+
+/* Pottery Master: visual UI/UX case study. */
+.pottery-overview{max-width:780px;color:var(--muted);font-size:16px;margin:24px 0 18px}
+.pottery-award{display:inline-block;font-size:11px;color:var(--green);border:1px solid var(--line);padding:6px 12px}
+.pottery-chapter{border-top:1px solid var(--line);padding:38px 0;margin-top:38px}
+.pottery-section-heading{max-width:760px;margin-bottom:30px}
+.pottery-section-heading h2{margin:10px 0 16px;font-size:32px}
+.pottery-section-heading p,.pottery-design-notes p{color:var(--muted);margin-bottom:16px}
+.pottery-figure img{width:100%;height:auto;object-fit:contain}
+.pottery-figure figcaption{color:var(--muted);font-size:11px;margin-top:12px}
+.pottery-ui-detail,.pottery-prototype{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:36px;align-items:center;margin-top:36px}
+.pottery-design-notes h3{font-size:24px;margin:0 0 16px}
+.pottery-world{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.8fr);gap:36px;align-items:center}
+.pottery-character{display:flex;justify-content:center;align-items:center;background:var(--wash);padding:24px;min-height:360px}
+.pottery-character img{width:min(100%,300px);height:auto}
+.pottery-flow{max-width:1000px;margin:0 auto}
+@media(max-width:600px){.pottery-overview{font-size:14px}.pottery-chapter{padding:28px 0;margin-top:28px}.pottery-section-heading h2{font-size:27px}.pottery-ui-detail,.pottery-prototype,.pottery-world{grid-template-columns:1fr;gap:24px}.pottery-character{min-height:0}.pottery-character img{max-width:240px}}
+
+/* Compact 2x2 project grid: smaller covers, text stacked underneath. */
+.project-grid{grid-template-columns:1fr 1fr;gap:48px 32px}
+.work-cover{aspect-ratio:1.5}
+.work-cover.ello>img{padding:28px}
+.poster-pair{padding:22px;gap:16px}
+.work-copy{display:block}
+.work-copy>h3{font-size:26px;margin:8px 0 10px}
+.work-copy>p{max-width:none;margin:0 0 14px}
+.work-copy>.tags{margin:0 0 12px}
+.work-copy>.studio-links{margin:0 0 12px}
+@media(max-width:600px){.project-grid{grid-template-columns:1fr;gap:40px}.work-cover{aspect-ratio:1.3}}
+/* Pottery Master: rewritten case study additions. */
+.pottery-gif-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0 0 44px}.pottery-gif-pair .pottery-figure{margin:0}
+@media(max-width:600px){.pottery-gif-pair{grid-template-columns:1fr}}
+.pottery-meta{grid-template-columns:1fr 1fr 1.3fr 1.3fr}
+.pottery-paper{margin-left:18px}
+.pottery-ui-detail{margin-top:0;margin-bottom:44px}
+.pottery-feature-text{max-width:760px}
+.pottery-goals{max-width:760px;margin:0;padding-left:22px;color:var(--muted);font-size:16px}.pottery-goals li{margin-bottom:10px;padding-left:6px}
+.pottery-chapter .content-notes{margin:0 0 34px}
+.pottery-section-heading h3{font-size:24px;margin:0 0 16px}
+@media(max-width:600px){.pottery-meta{grid-template-columns:1fr}.pottery-paper{margin:14px 0 0;display:inline-flex}.pottery-ui-detail{margin-bottom:32px}}
+/* Uniform 16:9 frame for all pottery GIFs. */
+.pottery-media{aspect-ratio:16/9;background:var(--wash);overflow:hidden}
+.pottery-figure .pottery-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+/* Welcome screen + 3D character side by side. */
+.pottery-hero-pair{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:24px;align-items:start;margin-top:36px}
+.pottery-character-box{aspect-ratio:.988;background:var(--wash);display:flex;align-items:center;justify-content:center;padding:6%}
+.pottery-figure .pottery-character-box img{width:100%;height:100%;object-fit:contain;display:block}
+@media(max-width:600px){.pottery-hero-pair{grid-template-columns:1fr}.pottery-character-box{aspect-ratio:1}}
+.pottery-logic img{background:#fff;padding:clamp(12px,2.5vw,28px);border:1px solid var(--line);box-sizing:border-box;display:block;width:100%;height:auto}
+/* Smaller Instagram reels: keep the embed's original layout, scaled to 70%. */
+.studio-reel-frame{position:relative;width:336px;max-width:100%;height:455px;overflow:hidden;margin:20px 0 14px}
+.studio-reel-frame .studio-reel{position:absolute;top:0;left:0;width:480px;height:650px;margin:0;transform:scale(.7);transform-origin:0 0}
+@media(max-width:600px){.studio-reel-frame{width:100%;height:auto}.studio-reel-frame .studio-reel{position:static;width:100%;height:620px;transform:none}}
+/* Design Features: one clean row per feature. */
+.pottery-features{border-top:1px solid var(--line)}
+.pottery-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:56px;align-items:center;padding:36px 0;border-bottom:1px solid var(--line)}
+.pottery-feature .pottery-figure{margin:0}
+.pottery-feature-no{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:14px}
+.pottery-feature-copy h3{font-size:26px;line-height:1.2;margin:0 0 12px}
+.pottery-feature-copy p{margin:0;color:var(--muted);max-width:34ch}
+.pottery-feature-textonly{grid-template-columns:1fr}
+.pottery-figure .pottery-media video{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:700px){.pottery-feature{grid-template-columns:1fr;gap:20px;padding:28px 0}.pottery-feature .pottery-figure{max-width:480px}.pottery-feature-copy p{max-width:none}}
+/* Pottery Master opening: title banner + Bagpack panel, character overlapping. */
+.pottery-hero-stack{position:relative;max-width:940px;margin:40px auto 24px;padding:0 0 28px 17%}
+.pottery-hero-card{overflow:hidden;border-radius:clamp(22px,4.4vw,48px);background:var(--wash)}
+.pottery-hero-card+.pottery-hero-card{margin-top:clamp(12px,2vw,22px)}
+.pottery-hero-card img{display:block;width:100%;height:100%;object-fit:cover}
+.pottery-hero-card.banner{aspect-ratio:2.95/1}.pottery-hero-card.banner img{object-position:center 52%}
+.pottery-hero-card.panel{aspect-ratio:1.92/1}
+.pottery-hero-char{position:absolute;left:3%;bottom:0;width:19%;height:auto;z-index:2;pointer-events:none}
+@media(max-width:600px){.pottery-hero-stack{padding-left:13%;padding-bottom:20px}.pottery-hero-char{left:0;width:24%}}
+/* Pottery Master opening: text left, smaller hero stack right. */
+.pottery-intro{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center;margin-bottom:12px}
+.pottery-intro .case-top{display:block}
+.pottery-intro .case-top h1{font-size:48px}
+.pottery-intro .subtitle{margin-top:16px;max-width:none}
+.pottery-intro .pottery-overview{max-width:none;margin:22px 0 20px}
+.pottery-intro .pottery-hero-stack{max-width:none;margin:0;width:100%}
+.pottery-intro .pottery-paper{display:inline-block;margin:10px 0 0}
+@media(max-width:800px){.pottery-intro{grid-template-columns:1fr;gap:12px}.pottery-intro .case-top h1{font-size:43px}.pottery-intro .pottery-hero-stack{max-width:520px;margin:0 auto}}
+/* Project video embed. */
+.pottery-video-embed{position:relative;aspect-ratio:16/9;max-width:860px;background:var(--wash);border:1px solid var(--line)}
+.pottery-video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.pottery-video-link{display:inline-block;margin-top:16px}
+/* Homepage hero: headline left, intro right, so the first screen is balanced. */
+.home-hero{max-width:none}
+.hero-copy{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);column-gap:72px;align-items:end}
+.hero-copy>.label{grid-column:1 / -1}
+.hero-copy>h1{margin-bottom:0}
+.hero-copy>p{max-width:none;margin-bottom:8px}
+@media(max-width:850px){.hero-copy{display:block}.hero-copy>h1{margin-bottom:25px}.hero-copy>p{margin-bottom:27px}}
+/* Avoid a doubled rule where a chapter follows the meta row. */
+.case-meta+.studio-chapter,.case-meta+.pottery-chapter{border-top:0;padding-top:4px;margin-top:0}
+/* Video covers: open the video on Instagram or YouTube instead of embedding a player. */
+.video-cover{position:relative;display:block;overflow:hidden;background:var(--wash);margin:20px 0 14px}
+.video-cover.reel{width:300px;max-width:100%;aspect-ratio:4/5}
+.video-cover.wide{max-width:860px;aspect-ratio:16/9;margin-top:0}
+.video-cover img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.video-cover:hover img{transform:scale(1.025)}
+.video-play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(52,56,48,.78);color:var(--paper);display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:4px;transition:background .2s}
+.video-cover:hover .video-play{background:var(--green)}
+@media(max-width:600px){.studio-video-selections{grid-template-columns:1fr 1fr;gap:16px}.studio-video-selection h3{font-size:18px}.video-cover.reel{width:100%;margin:12px 0 10px}.video-play{width:48px;height:48px;margin:-24px 0 0 -24px;font-size:15px}}
+/* Studio reels as the studio's own video files (9:16). */
+.studio-video{display:block;width:300px;max-width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--wash);margin:20px 0 14px}
+@media(max-width:600px){.studio-video{width:100%;margin:12px 0 10px}}
+/* Ello: selected books, cover plus three spreads each. */
+.ello-books{padding-bottom:10px}
+.ello-book{padding:34px 0;border-top:1px solid var(--line)}
+.ello-book:first-child{border-top:0;padding-top:4px}
+.ello-book-head{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:20px}
+.ello-book-head h3{font-size:24px;margin:0}
+.ello-book-head p{color:var(--muted);font-size:14px;margin:0}
+.ello-pages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.ello-pages figure{margin:0}
+.ello-pages img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:var(--wash)}
+.ello-pages figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+@media(max-width:600px){.ello-book{padding:26px 0}.ello-book-head{display:block}.ello-book-head h3{margin:6px 0 4px;font-size:22px}.ello-pages{grid-template-columns:1fr 1fr;gap:12px}}
+</style>
+</head>
+<body>
+<!-- The homepage and four case studies are inside this file. CSS :target switches pages.
+     Images, videos and the resume live in assets/. -->
+<a class="skip" href="#work">Skip to work</a>
+<header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="wordmark" href="#work">Kemeng Zhai</a><a class="text-link" href="assets/Kemeng_Zhai_Resume.pdf" download="Kemeng_Zhai_Resume.pdf">Download Resume ↓</a></nav></header>
+<main class="pages wrap">
+<section id="work" class="page" aria-label="Selected work">
+  <div class="home-hero"><div class="hero-copy"><span class="label">Hong Kong · Multimedia Designer</span><h1>Designing visuals, interfaces and <em>stories</em>.</h1><p>I’m Kemeng, a multimedia designer who recently moved to Hong Kong, with experience in graphic design, content creation and UI/UX design. My work spans visual identities, illustration, digital interfaces, photography and video, including the website and brand content for my independent pottery studio.</p></div></div>
+  <div class="section-head"><h2>Selected work</h2></div>
+  <div class="project-grid">
+  <article class="work-item"><a class="work-cover" href="#studio" aria-label="View Kemeng Studio project"><img id="cover-studio" src="assets/img/2d87be8625.jpg" alt="Terracotta planters designed and made for Kemeng Studio"></a><div class="work-copy"><span class="label">01 / Independent practice</span><h3><a href="#studio">Kemeng Studio</a></h3><div class="studio-links"><a class="text-link" href="https://kemengstudio.com/" target="_blank" rel="noopener noreferrer">Shopify ↗</a><a class="text-link" href="https://www.instagram.com/kemeng.studio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div><div class="tags">Visual identity · Photography · Content creation</div><p>I started a pottery studio where I design, make and sell ceramics. I also created its visual identity and Shopify website, and produce photos, videos and written content for Instagram and Xiaohongshu.</p><a class="text-link" href="#studio">Explore project <span aria-hidden="true">↗</span></a></div></article>
+  <article class="work-item reverse"><a class="work-cover vr" href="#pottery-master" aria-label="View Pottery Master project"><img src="assets/img/86117fb4e3.jpg" alt="Pottery Master virtual studio concept with pottery instructions" loading="lazy"></a><div class="work-copy"><span class="label">02 / UI/UX &amp; visual design</span><h3><a href="#pottery-master">Pottery Master</a></h3><div class="tags">Visual design · UX/UI · Learning experience</div><p>I designed a VR pottery learning simulation for my master’s thesis at NYU, creating 2D/3D assets and interactive interfaces. The project received the Excellent in Prototyping Award.</p><a class="text-link" href="#pottery-master">Explore project <span aria-hidden="true">↗</span></a></div></article>
+  <article class="work-item reverse"><a class="work-cover ello" href="#ello" aria-label="View Read with Ello project"><img src="assets/img/40b296dbda.jpg" alt="Ello reading platform, shown as project context" loading="lazy"></a><div class="work-copy"><span class="label">03 / Illustration</span><h3><a href="#ello">Read with Ello</a></h3><div class="tags">Children’s books · Visual storytelling · AI tools</div><p>Illustration work for a children’s reading platform, combining Adobe tools and generative AI in a commercial creative workflow.</p><a class="text-link" href="#ello">Explore project <span aria-hidden="true">↗</span></a></div></article>
+  <article class="work-item"><a class="work-cover" href="#graphic-design" aria-label="View Selected Graphic Design"><div class="poster-pair"><img src="assets/img/34b8a921af.jpg" alt="ECT Design Expo spring poster" loading="lazy"><img src="assets/img/4e9cf9a530.jpg" alt="ECT Career Series poster" loading="lazy"></div></a><div class="work-copy"><span class="label">04 / Visual communication</span><h3><a href="#graphic-design">Selected Graphic Design</a></h3><div class="tags">Posters · Typography · Digital graphics</div><p>Visuals for exhibitions, events and educational communications, with an emphasis on clear hierarchy and expressive composition.</p><a class="text-link" href="#graphic-design">Explore collection <span aria-hidden="true">↗</span></a></div></article>
+
+  </div>
+</section>
+<section id="studio" class="page" aria-labelledby="studio-title">
+  <div class="page-heading"><a class="back" href="#work">← Selected work</a><div class="case-top"><div><span class="label">01 / Independent practice</span><h1 id="studio-title">Kemeng Studio</h1></div><p class="subtitle">Shopify website, content creation<br>&amp; retail collaboration</p></div>
+  <p class="studio-overview">An independent pottery studio I founded in London in 2024, while living there from 2024 to 2026. I design and make the ceramics, run the Shopify store, and create the visual and written content used to share and sell my work.</p></div>
+  <dl class="case-meta"><div><dt>My role</dt><dd>Founder, designer &amp; content creator</dd></div><div><dt>Scope</dt><dd>Product design &amp; production · Shopify website launch · Brand identity · Campaign content</dd></div><div><dt>Timeline</dt><dd>October 2024 — Present</dd></div></dl>
+  <section class="studio-chapter" aria-labelledby="studio-website-title">
+    <div class="studio-chapter-heading"><span class="label">01 / Website</span><h2 id="studio-website-title">Shopify Website &amp; E-commerce</h2><p>I built the studio’s Shopify website and visual identity, bringing together my product photography and copy to introduce each collection and sell handmade pieces online.</p><a class="text-link" href="https://kemengstudio.com/" target="_blank" rel="noopener noreferrer">Visit kemengstudio.com ↗</a></div>
+    <div class="storefront-gallery">
+      <figure class="storefront-desktop"><img src="assets/img/542fbe8514.jpg" width="2880" height="1556" alt="Kemeng Studio Shopify homepage on desktop, showing navigation, Terracotta Drop collection imagery and the shop section" loading="lazy"><figcaption>Desktop website</figcaption></figure>
+      <figure class="storefront-mobile"><img src="assets/img/aea0893990.jpg" width="1179" height="2556" alt="Kemeng Studio Shopify homepage on mobile, showing the collection introduction and two-column product cards" loading="lazy"><figcaption>Mobile website</figcaption></figure>
+    </div>
+  </section>
+  <section class="studio-chapter" aria-labelledby="studio-content-title">
+    <div class="studio-chapter-heading"><span class="label">02 / Content creation</span><h2 id="studio-content-title">Studio Stories &amp; AI Video</h2><p>I create photos, videos and written content for Instagram and Xiaohongshu, sharing the making process and new ceramic work. I also experiment with AI-generated video for the studio’s brand content.</p></div>
+    <div class="studio-video-selections">
+      <div class="studio-video-selection"><span class="label">Instagram Reel</span><h3>Studio content</h3><video class="studio-video" src="assets/video/studio-content.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Studio content: making ceramics at the wheel in the studio"></video><a class="text-link" href="https://www.instagram.com/reel/DUx3_wQDUwg/" target="_blank" rel="noopener noreferrer">Watch on Instagram ↗</a></div>
+      <div class="studio-video-selection"><span class="label">AI-generated video</span><h3>Creative experiments</h3><video class="studio-video" src="assets/video/creative-experiments.mp4" autoplay muted loop playsinline preload="metadata" controls aria-label="Creative experiments: AI-generated video of a white ceramic vase"></video><a class="text-link" href="https://www.instagram.com/reel/DZcBPsuuPPe/" target="_blank" rel="noopener noreferrer">Watch on Instagram ↗</a></div>
+    </div>
+    <a class="text-link" href="https://www.instagram.com/kemeng.studio/" target="_blank" rel="noopener noreferrer">View @kemeng.studio ↗</a>
+  </section>
+  <section class="studio-chapter" aria-labelledby="studio-retail-title">
+    <div class="studio-chapter-heading"><span class="label">03 / Offline collaboration</span><h2 id="studio-retail-title">Kemeng Studio × Amori</h2><p>I partnered with London matcha space Amori on offline retail and displays, bringing my handmade ceramics into a physical retail setting.</p></div>
+    <div class="amori-gallery">
+      <figure><img id="cover-amori" src="assets/img/4b6f41c6d2.jpg" alt="Handmade ceramic pieces displayed on wooden shelves at Amori" loading="lazy"><figcaption>Ceramics on display</figcaption></figure>
+      <figure><img src="assets/img/e4b21aef36.jpg" alt="Street view of the London matcha space with a curved glass shopfront" loading="lazy"><figcaption>Amori, London</figcaption></figure>
+    </div>
+  </section>
+  <div class="case-next"><a href="#work">← All work</a><a href="#pottery-master">Next: Pottery Master →</a></div>
+</section>
+<section id="pottery-master" class="page" aria-labelledby="pottery-title">
+  <div class="pottery-intro">
+  <div class="page-heading"><a class="back" href="#work">← Selected work</a><div class="case-top"><div><span class="label">02 / UI/UX &amp; visual design</span><h1 id="pottery-title">Pottery Master</h1></div><p class="subtitle">Virtual Pottery Crafting<br>NYU thesis project</p></div>
+  <p class="pottery-overview">As my thesis project at NYU, “Pottery Master” leverages virtual reality to provide an immersive pottery crafting experience free from physical and material constraints. Developed in collaboration with a software developer, it enables users to master pottery in an accessible virtual space.</p><span class="pottery-award">NYU · Excellent in Prototyping Award</span> <a class="text-link pottery-paper" href="https://docs.google.com/document/d/1YYfxq8O_Af6KXMk323MvFDBKsvq1juqI7vcqG0F0i2k/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Research paper ↗</a></div>
+  <div class="pottery-hero-stack">
+    <div class="pottery-hero-card banner"><img id="cover-pottery" src="assets/img/43a74f9b78.jpg" alt="Pottery Master title screen: the logo over a virtual ceramics studio table"></div>
+    <div class="pottery-hero-card panel"><img src="assets/img/085a03f4e7.jpg" alt="Bagpack interface for choosing clay, work, glaze and tools"></div>
+    <img class="pottery-hero-char" src="assets/img/7cc3ee0728.webp" alt="Animated 3D pottery character with a smiling face and decorative ceramic patterns">
+  </div>
+  </div>
+  <dl class="case-meta pottery-meta"><div><dt>My role</dt><dd>Learning Designer · Game Designer · Visual Designer</dd></div><div><dt>Tools</dt><dd>Figma · Unity · Blender · Adobe Photoshop</dd></div><div><dt>Skills</dt><dd>UX/Learning Research · UX/UI Design · Content Creation · Rapid Prototyping · Usability Testing</dd></div><div><dt>Duration</dt><dd>12 months (6 months research &amp; ideation + 6 months prototype &amp; testing)</dd></div></dl>
+  <section class="pottery-chapter" aria-labelledby="pottery-hmw-heading">
+    <div class="pottery-section-heading"><span class="label">01 / Challenge</span><h2 id="pottery-hmw-heading">“How Might We overcome space and resource limitations in ceramics education to make it more accessible and inclusive?”</h2><p>Addressing these challenges, I designed “Pottery Master”, a VR solution that broadens access to ceramic education. It’s an immersive platform that transcends traditional limitations, designed for everyone from beginners to enthusiasts.</p></div>
+  </section>
+  <section class="pottery-chapter" aria-labelledby="pottery-features-heading">
+    <div class="pottery-section-heading"><span class="label">02 / Design features</span><h2 id="pottery-features-heading">Design Features</h2></div>
+    <div class="pottery-features">
+      <article class="pottery-feature"><div class="pottery-feature-copy"><span class="pottery-feature-no">01</span><h3>Tactile Feedback / Hand Tracking</h3><p>Hand tracking lets learners shape clay with their own hands, so they learn by doing, not just watching.</p></div><figure class="pottery-figure"><div class="pottery-media"><video src="assets/video/c644b68c22.mp4" poster="assets/img/edd8dd1317.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Hand tracking: picking up and handling a block of clay in the virtual studio"></video></div></figure></article>
+      <article class="pottery-feature"><div class="pottery-feature-copy"><span class="pottery-feature-no">02</span><h3>Immersive Environment</h3><p>A virtual studio puts learning in context, such as a Grecian workshop for ancient Greek pottery methods.</p></div><figure class="pottery-figure"><div class="pottery-media"><video src="assets/video/a261a16266.mp4" poster="assets/img/3a4c024e73.jpg" autoplay muted loop playsinline preload="metadata" aria-label="The virtual studio with shelves of ceramics and a kiln fire"></video></div></figure></article>
+      <article class="pottery-feature"><div class="pottery-feature-copy"><span class="pottery-feature-no">03</span><h3>Dynamic Learning Modules</h3><p>Tutorials suit different learning styles: watch a demonstration or follow step-by-step instructions.</p></div><figure class="pottery-figure"><div class="pottery-media"><video src="assets/video/dac21844c9.mp4" poster="assets/img/7545958857.jpg" autoplay muted loop playsinline preload="metadata" aria-label="In-game video demonstrations of coiling and slab building with a skip button"></video></div></figure></article>
+      <article class="pottery-feature"><div class="pottery-feature-copy"><span class="pottery-feature-no">04</span><h3>Collaborative Platforms</h3><p>Players share creations in an online gallery and exchange critiques, building a community of practice.</p></div><figure class="pottery-figure"><div class="pottery-media"><img src="assets/img/50cffa97a3.webp" alt="Shared virtual pottery studio with two participant avatars in a bright gallery-like room" loading="lazy"></div></figure></article>
+    </div>
+  </section>
+  <section class="pottery-chapter" aria-labelledby="pottery-goals-heading">
+    <div class="pottery-section-heading"><span class="label">03 / Goals</span><h2 id="pottery-goals-heading">Learning Goals</h2></div>
+    <ol class="pottery-goals"><li>Enhance Mastery of Ceramics Techniques and Knowledge</li><li>Facilitate Deep Understanding and Appreciation of Art and Pottery History</li><li>Promote Community Engagement and Artistic Critique through Social Interactions</li><li>Offer Therapeutic Relaxation and Mindfulness Through VR Pottery</li><li>Enable VR Pottery as a Medium for Entertainment and Self-Expression</li></ol>
+  </section>
+  <section class="pottery-chapter" aria-labelledby="pottery-logic-heading">
+    <div class="pottery-section-heading"><span class="label">04 / Logic model</span><h2 id="pottery-logic-heading">Logic Model</h2></div>
+    <figure class="pottery-figure pottery-logic"><img src="assets/img/6898fb4850.jpg" alt="Logic model diagram: inputs lead to activities, outputs and short- and long-term outcomes, which feed into the project’s overall impact" loading="lazy"><figcaption>Logic model · From inputs and activities to outcomes and long-term impact.</figcaption></figure>
+  </section>
+  <section class="pottery-chapter" aria-labelledby="pottery-ideation-heading">
+    <div class="pottery-section-heading"><span class="label">05 / Ideation</span><h2 id="pottery-ideation-heading">Ideation</h2><p>My ideation process began with Figma. Using Figma, I developed wireframes and interactive prototypes to map out the general flow and layout of the application. This stage was crucial for visualizing the user journey and ensuring that each screen was logically connected.</p></div>
+    <figure class="pottery-figure pottery-flow"><img src="assets/img/b13d6ddbc4.jpg" alt="Figma overview showing onboarding, material selection, pottery lessons and other screens in the experience" loading="lazy"><figcaption>Figma workspace · Mapping the onboarding and pottery learning sequence.</figcaption></figure>
+  </section>
+  <section class="pottery-chapter" aria-labelledby="pottery-testing-heading">
+    <div class="pottery-section-heading"><span class="label">06 / Testing &amp; build</span><h2 id="pottery-testing-heading">Usability Testing</h2><p>Once the initial prototypes were ready, I conducted usability testing to gather feedback on the general flow and usability. This phase involved:</p></div>
+    <div class="content-notes"><div><h3>User Testing Sessions</h3><p>Organized sessions with target users to observe their interactions with the prototype.</p></div><div><h3>Feedback Collection</h3><p>Gathered qualitative and quantitative data on user experience, identifying pain points and areas for improvement.</p></div><div><h3>Iteration</h3><p>Refined the prototypes based on feedback, improving navigation, layout, and overall usability.</p></div></div>
+    <div class="pottery-section-heading"><h3>Implementation in Unity</h3><p>After validating the usability and general flow, I transferred the project to Unity for the final implementation. Unity provided the flexibility and power needed to bring the design to life with advanced animations and interactions.</p></div>
+  </section>
+  <section class="pottery-chapter" aria-labelledby="pottery-video-heading">
+    <div class="pottery-section-heading"><span class="label">07 / Project video</span><h2 id="pottery-video-heading">Project Video</h2></div>
+    <div class="pottery-video-embed"><iframe src="https://www.youtube-nocookie.com/embed/TKvrJ2J-a4Q" title="Pottery Master project video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <a class="text-link pottery-video-link" href="https://www.youtube.com/watch?v=TKvrJ2J-a4Q" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+  </section>
+  <div class="case-next"><a href="#work">← All work</a><a href="#ello">Next: Read with Ello →</a></div>
+</section>
+<section id="ello" class="page" aria-labelledby="ello-title"><div class="page-heading"><a class="back" href="#work">← Selected work</a><div class="case-top"><div><span class="label">03 / Illustration</span><h1 id="ello-title">Read with Ello</h1></div><p class="subtitle">Children’s books<br>&amp; AI-assisted illustration</p></div></div><figure style="background:#dcece5;padding:50px"><img src="assets/img/40b296dbda.jpg" alt="Ello reading platform, shown as project context" style="margin:auto;width:min(700px,100%)"><figcaption style="font-size:11px;color:var(--muted);text-align:center;margin-top:20px">Ello reading platform · Project context</figcaption></figure>
+<div class="case-body"><div class="case-intro"><h3>Illustration for<br>young readers.</h3><div><p>As a freelance graphic designer for Ello, I delivered over 40 illustrations for children’s books using Photoshop, Illustrator and AI tools.</p><p>The work brought together illustration and visual storytelling for a children’s reading experience.</p><a class="text-link" href="https://dribbble.com/MoMoZhai1998/shots" target="_blank" rel="noopener noreferrer">Browse illustration work on Dribbble ↗</a></div></div></div>
+          
+<dl class="case-meta"><div><dt>Role</dt><dd>Freelance graphic designer</dd></div><div><dt>Tools</dt><dd>Photoshop · Illustrator · AI tools</dd></div><div><dt>Timeline</dt><dd>July — August 2023</dd></div></dl><section class="ello-books" aria-label="Selected books"><div class="ello-book"><div class="ello-book-head"><span class="label">Book 01</span><h3>Bat Pups</h3><p>Two bat pups exploring the forest at night.</p></div><div class="ello-pages"><figure><img src="assets/img/ello-bat-cover.jpg" alt="Bat Pups cover: two cartoon bats flying against a pink sunset sky" loading="lazy" width="1000" height="1000"><figcaption>Cover</figcaption></figure><figure><img src="assets/img/ello-bat-p3.jpg" alt="Two bats hanging and flapping in a dark forest" loading="lazy" width="1000" height="1000"><figcaption>Page 3</figcaption></figure><figure><img src="assets/img/ello-bat-p6.jpg" alt="A bat gliding past a full moon above a fallen log" loading="lazy" width="1000" height="1000"><figcaption>Page 6</figcaption></figure><figure><img src="assets/img/ello-bat-p9.jpg" alt="Two bats flying through a moonlit forest with flowers" loading="lazy" width="1000" height="1000"><figcaption>Page 9</figcaption></figure></div></div><div class="ello-book"><div class="ello-book-head"><span class="label">Book 02</span><h3>A Game of Chase</h3><p>A cat and a mouse in a playful chase around the house.</p></div><div class="ello-pages"><figure><img src="assets/img/ello-chase-cover.jpg" alt="A Game of Chase cover: a cat and mouse by a cosy fireplace" loading="lazy" width="1000" height="1000"><figcaption>Cover</figcaption></figure><figure><img src="assets/img/ello-chase-p3.jpg" alt="A cat chasing a mouse across a bright kitchen" loading="lazy" width="1000" height="1000"><figcaption>Page 3</figcaption></figure><figure><img src="assets/img/ello-chase-p6.jpg" alt="Split scene of a mouse in a glass jar and a cat sleeping by the fire" loading="lazy" width="1000" height="1000"><figcaption>Page 6</figcaption></figure><figure><img src="assets/img/ello-chase-p9.jpg" alt="A cat in a cage with the mouse sitting outside" loading="lazy" width="1000" height="1000"><figcaption>Page 9</figcaption></figure></div></div><div class="ello-book"><div class="ello-book-head"><span class="label">Book 03</span><h3>Too Can Hop</h3><p>A grasshopper on a summer camping trip.</p></div><div class="ello-pages"><figure><img src="assets/img/ello-hop-cover.jpg" alt="Too Can Hop cover: a grasshopper on a red gingham picnic table" loading="lazy" width="1000" height="1000"><figcaption>Cover</figcaption></figure><figure><img src="assets/img/ello-hop-p3.jpg" alt="A grasshopper beside a green tent and campfire wood" loading="lazy" width="1000" height="1000"><figcaption>Page 3</figcaption></figure><figure><img src="assets/img/ello-hop-p6.jpg" alt="A grasshopper on a pot on top of a camping grill" loading="lazy" width="1000" height="1000"><figcaption>Page 6</figcaption></figure><figure><img src="assets/img/ello-hop-p9.jpg" alt="A grandmother hiking past a tent with a grasshopper on top" loading="lazy" width="1000" height="1000"><figcaption>Page 9</figcaption></figure></div></div></section><div class="case-next"><a href="#work">← All work</a><a href="#graphic-design">Next: Graphic Design →</a></div></section>
+<section id="graphic-design" class="page" aria-labelledby="graphics-title"><div class="page-heading"><a class="back" href="#work">← Selected work</a><span class="label">04 / Visual communication</span><h1 id="graphics-title">Selected Graphic Design</h1><p class="lede">Posters and digital graphics for exhibitions, educational events and student communications.</p></div>
+<div class="case-body">
+              <div class="case-intro"><h3>Making information<br>visually engaging.</h3><div><p>Selected posters and promotional graphics for exhibitions, educational events and student communications. The work brings together typography, illustration and clear information hierarchy.</p></div></div>
+              <div class="poster-gallery">
+                <figure><img src="assets/img/34b8a921af.jpg" alt="Spring 2022 ECT Design Expo poster, with fine-line geometry and orange circles" loading="lazy"><figcaption>ECT Design Expo · Spring 2022</figcaption></figure>
+                <figure><img src="assets/img/4e9cf9a530.jpg" alt="Purple ECT Career Series poster with an illustrated staircase" loading="lazy"><figcaption>ECT Career Series · Event communications</figcaption></figure>
+                <figure><img src="assets/img/661a1626ba.jpg" alt="Yellow Chinese-language transfer seminar poster with illustrated information panels" loading="lazy"><figcaption>Transfer seminar · Educational promotion</figcaption></figure>
+                <figure><img src="assets/img/8cb3a731af.jpg" alt="Fall 2021 ECT Design Expo poster with blue abstract shapes on a black background" loading="lazy"><figcaption>ECT Design Expo · Fall 2021</figcaption></figure>
+              </div>
+            </div>
+          
+<div class="case-next"><a href="#work">← All work</a><a href="#studio">Next: Kemeng Studio →</a></div></section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="footer-content"><div><h2>Let’s work together.</h2><a class="text-link" href="mailto:kemengzhai@gmail.com">kemengzhai@gmail.com ↗</a></div><div class="footer-socials"><a class="text-link" href="assets/Kemeng_Zhai_Resume.pdf" download="Kemeng_Zhai_Resume.pdf">Download Resume ↓</a><a href="https://www.instagram.com/kemeng.studio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/in/kemeng-zhai/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div><div class="copyright">© 2026 Kemeng Zhai · Hong Kong</div></div></footer>
+</body>
+</html>
