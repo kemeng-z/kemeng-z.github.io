@@ -90,10 +90,10 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .amori-gallery figcaption{font-size:11px;color:var(--muted);margin-top:12px}
 @media(max-width:600px){.amori-gallery{grid-template-columns:1fr;gap:24px}}
 /* Image-first galleries: one line of copy, large images */
-.grid-3,.grid-4{display:grid;gap:12px;margin-bottom:12px}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.grid-3 figure,.grid-4 figure{margin:0}.grid-3 img,.grid-4 img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--wash)}
+.grid-3,.grid-5{display:grid;gap:12px;margin-bottom:12px}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-5{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.grid-3 figure,.grid-5 figure{margin:0}.grid-3 img,.grid-5 img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--wash)}
 .grid-3.square img{aspect-ratio:1}
-.grid-3 figcaption,.grid-4 figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+.grid-3 figcaption,.grid-5 figcaption{font-size:11px;color:var(--muted);margin-top:8px}
 .ecom-set{margin-top:28px}
 .video-stat{font-size:12px;color:var(--muted);margin:0}
 .pack-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);grid-template-rows:330px 260px;gap:12px}
@@ -107,7 +107,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .ui-gallery .ui-tall{grid-row:span 2}.ui-gallery figcaption{font-size:11px;color:var(--muted);margin-top:8px}
 .ui-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}.ui-row figure{margin:0}.ui-row img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#fff}.ui-row figcaption{font-size:11px;color:var(--muted);margin-top:8px}
 .wide-figure{margin:0}.wide-figure img{width:100%;height:auto;background:#fff}.wide-figure figcaption{font-size:11px;color:var(--muted);margin-top:10px}
-@media(max-width:600px){.grid-4{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr 1fr}.grid-3 figure:last-child:nth-child(odd){grid-column:span 2}.pack-grid,.ui-gallery,.ui-row{grid-template-columns:1fr}.pack-grid{grid-template-rows:auto}.pack-grid img{flex:none;height:auto;max-height:420px}.pack-front,.ui-gallery .ui-tall{grid-row:auto}.pack-small{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:600px){.grid-5{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-3{grid-template-columns:1fr 1fr}.grid-3 figure:last-child:nth-child(odd){grid-column:span 2}.pack-grid,.ui-gallery,.ui-row{grid-template-columns:1fr}.pack-grid{grid-template-rows:auto}.pack-grid img{flex:none;height:auto;max-height:420px}.pack-front,.ui-gallery .ui-tall{grid-row:auto}.pack-small{grid-template-columns:1fr 1fr 1fr}}
 
 /* Pottery Master: visual UI/UX case study. */
 .pottery-overview{max-width:780px;color:var(--muted);font-size:16px;margin:24px 0 18px}
@@ -252,21 +252,19 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
   <dl class="case-meta"><div><dt>My role</dt><dd>Founder &amp; brand designer</dd></div><div><dt>Scope</dt><dd>Product design &amp; production · Shopify website launch · Brand identity · Campaign content</dd></div><div><dt>Timeline</dt><dd>October 2024 — Present</dd></div></dl>
   <section class="studio-chapter" aria-labelledby="studio-photo-title">
     <div class="studio-chapter-heading"><span class="label">01 / Product photography</span><h2 id="studio-photo-title">Terracotta Friends</h2><p>5 one-of-a-kind pieces, $48–103. One planned shoot for every channel · 40% sell-through.</p></div>
-    <div class="grid-3">
-      <figure><img src="assets/img/tf-l2-mood1.jpg" alt="Terracotta pots with plants in hard sunlight" loading="lazy"><figcaption>Mood · banner &amp; social</figcaption></figure>
-      <figure><img src="assets/img/tf-l2-mood2.jpg" alt="Polka-dot pot with a plant and long shadows" loading="lazy"></figure>
-      <figure><img src="assets/img/tf-l2-mood3.jpg" alt="Candle holder in raking light" loading="lazy"></figure>
-    </div>
-    <div class="grid-4">
+    <div class="grid-5">
       <figure><img src="assets/img/tf-l2-tripod.jpg" alt="Tripod vessel on grey linen" loading="lazy"><figcaption>Studio · product pages</figcaption></figure>
       <figure><img src="assets/img/tf-l2-dot.jpg" alt="Polka-dot belly pot on grey linen" loading="lazy"></figure>
       <figure><img src="assets/img/tf-l2-spike.jpg" alt="Spike pot with handles on grey linen" loading="lazy"></figure>
       <figure><img src="assets/img/tf-l2-loop.jpg" alt="Tripod pot with a loop handle on grey linen" loading="lazy"></figure>
+      <figure><img src="assets/img/tf-l2-candle.jpg" alt="Terracotta candle holder on grey linen" loading="lazy"></figure>
     </div>
-    <div class="grid-3">
+    <div class="grid-5">
+      <figure><img src="assets/img/tf-l2-mood1.jpg" alt="Terracotta pots with plants in hard sunlight" loading="lazy"><figcaption>Mood · banner &amp; social</figcaption></figure>
+      <figure><img src="assets/img/tf-l2-mood2.jpg" alt="Polka-dot pot with a plant and long shadows" loading="lazy"></figure>
+      <figure><img src="assets/img/tf-l2-mood3.jpg" alt="Candle holder in raking light" loading="lazy"></figure>
       <figure><img src="assets/img/tf-l2-stamp.jpg" alt="Close-up of the maker's mark stamped into terracotta" loading="lazy"><figcaption>Detail · feature highlights</figcaption></figure>
       <figure><img src="assets/img/tf-l2-ring.jpg" alt="Close-up of a ring handle and clay texture" loading="lazy"></figure>
-      <figure><img src="assets/img/tf-l2-candle.jpg" alt="Terracotta candle holder on grey linen" loading="lazy"></figure>
     </div>
   </section>
   <section class="studio-chapter" aria-labelledby="studio-website-title">
@@ -383,7 +381,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
   <div class="ui-row">
     <figure><img src="assets/img/ui-app_calendar_hand.jpg" alt="Scheduling app calendar held in a hand" loading="lazy"><figcaption>Scheduling app</figcaption></figure>
     <figure><img src="assets/img/ui-app_milk.jpg" alt="Smart-device app connecting to a milk bottle sensor" loading="lazy"><figcaption>Smart-device app</figcaption></figure>
-    <figure><img src="assets/img/ui-ireaddog_storyboard.jpg" alt="Six-frame illustrated storyboard of a dog owner misreading her dog" loading="lazy" style="object-fit:contain"><figcaption>I Read Dog · storyboard illustration</figcaption></figure>
+    <figure><img src="assets/img/ui-app_jug_hand.jpg" alt="App screen with a ceramic jug, held in a hand" loading="lazy"><figcaption>App UI</figcaption></figure>
   </div>
   <div class="case-next"><a href="#work">← All work</a><a href="#studio">Next: Kemeng Studio →</a></div>
 </section>
