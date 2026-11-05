@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171815">
 <meta name="description" content="Kemeng Zhai — Visual Designer based in Hong Kong, working across brand identity, illustration, digital interfaces, photography and video.">
 <title>Kemeng Zhai — Visual Designer</title>
 <style>
-:root{--paper:#f5f2eb;--ink:#343830;--muted:#6b6e64;--line:#d8d7cc;--green:#4f5d46;--wash:#e9e8df}
+:root{--paper:#171815;--ink:#e9e6dc;--muted:#a2a497;--line:#33352e;--green:#b3c4a1;--wash:#21231e;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--green);outline-offset:6px}img{max-width:100%;display:block}::selection{background:#d8dfcc}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--green);outline-offset:6px}img{max-width:100%;display:block}::selection{background:#46523c}
 .wrap{width:min(1180px,calc(100% - 100px));margin:auto}.site-header{background:var(--paper);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:98px}.wordmark{font-size:22px;font-weight:600;letter-spacing:-.7px}
 .nav-links{display:flex;align-items:center;gap:32px;font-size:13px}.nav-links a{padding:6px 0}.nav-links a:hover{color:var(--green)}
 .pages>.page{display:none;scroll-margin-top:110px}.pages>#work{display:block}.pages:has(>.page:target)>#work:not(:target){display:none}.pages>.page:target{display:block}
 
-.label{font-size:10px;font-weight:500;letter-spacing:1.7px;text-transform:uppercase;color:var(--muted)}.text-link{display:inline-flex;gap:18px;align-items:center;font-size:13px;border-bottom:1px solid #93998a;padding-bottom:3px}.text-link:hover{color:var(--green)}
+.label{font-size:10px;font-weight:500;letter-spacing:1.7px;text-transform:uppercase;color:var(--muted)}.text-link{display:inline-flex;gap:18px;align-items:center;font-size:13px;border-bottom:1px solid #6b6f62;padding-bottom:3px}.text-link:hover{color:var(--green)}
 .button{display:inline-flex;background:var(--ink);color:var(--paper);gap:24px;align-items:center;padding:13px 20px;font-size:12px}.button:hover{background:var(--green)}
 h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5.1vw,66px);line-height:1.13;letter-spacing:-2.5px;margin-bottom:25px}h1 em,.serif{font-family:Georgia,serif;font-style:italic;font-weight:400}h2{font-size:31px;letter-spacing:-.9px;line-height:1.2}h3{font-size:24px;line-height:1.3;letter-spacing:-.5px}
 .home-hero{display:grid;grid-template-columns:1.6fr 1fr;gap:80px;align-items:center;padding:70px 0 66px}.home-hero .label{display:block;margin-bottom:23px}.hero-copy p{font-size:16px;color:var(--muted);max-width:600px;margin-bottom:27px}
@@ -22,8 +24,8 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .section-head{display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 30px;gap:20px}.section-head h2{font-size:26px;margin:0}
 .work-item{display:grid;grid-template-columns:1.4fr 1fr;gap:65px;align-items:center;margin-bottom:56px}.work-item.reverse{grid-template-columns:1fr 1.4fr}.work-item.reverse .work-cover{order:2}.work-item.reverse .work-copy{order:1}
 .work-cover{display:block;overflow:hidden;background:var(--wash);aspect-ratio:1.38}.work-cover>img{height:100%;width:100%;object-fit:cover;transition:transform .45s}.work-cover:hover>img{transform:scale(1.025)}
-.work-cover.vr>img{object-fit:contain;background:#e4e1d8}.work-cover.ello>img{object-fit:contain;padding:34px;background:#dcece5}.work-copy h3{font-size:35px;letter-spacing:-1px;margin:15px 0}.work-copy p{font-size:15px;color:var(--muted);margin-bottom:24px;max-width:390px}.work-copy .tags{font-size:11px;color:var(--muted);margin:-3px 0 19px}
-.poster-pair{display:flex;gap:22px;align-items:center;justify-content:center;background:#e7e5db;padding:32px;height:100%}.poster-pair img{width:43%;height:92%;object-fit:contain;filter:drop-shadow(0 7px 10px #00000012)}
+.work-cover.vr>img{object-fit:contain;background:#262722}.work-cover.ello>img{object-fit:contain;padding:34px;background:#1e2a26}.work-copy h3{font-size:35px;letter-spacing:-1px;margin:15px 0}.work-copy p{font-size:15px;color:var(--muted);margin-bottom:24px;max-width:390px}.work-copy .tags{font-size:11px;color:var(--muted);margin:-3px 0 19px}
+.poster-pair{display:flex;gap:22px;align-items:center;justify-content:center;background:var(--wash);padding:32px;height:100%}.poster-pair img{width:43%;height:92%;object-fit:contain;filter:drop-shadow(0 7px 10px #00000055)}
 .expertise{padding:45px 0 60px;border-top:1px solid var(--line)}.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:45px;margin-top:27px}.expertise-grid h3{font-size:20px;margin-bottom:12px}.expertise-grid p{font-size:13px;color:var(--muted);margin:0}
 .page-heading{padding:58px 0 38px}.page-heading h1{margin:14px 0 20px}.page-heading .lede{font-size:17px;color:var(--muted);max-width:710px;margin:0}.back{font-size:12px;color:var(--muted);display:inline-block;margin-bottom:30px}.back:hover{text-decoration:underline}
 .case-top{display:flex;justify-content:space-between;align-items:end;gap:35px;padding-bottom:30px}.case-top h1{font-size:55px;margin:12px 0 0}.case-top .subtitle{color:var(--muted);font-size:13px;max-width:320px;margin-bottom:5px}
@@ -35,7 +37,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .visual-section{padding:32px 0 50px;border-top:1px solid var(--line)}.visual-section>p{color:var(--muted);max-width:680px}.visual-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.visual-photos img{width:100%;height:390px;object-fit:cover}.visual-photos figcaption{font-size:11px;color:var(--muted);margin-top:10px}
 .about-layout{display:grid;grid-template-columns:.9fr 1.4fr;gap:75px;padding-bottom:60px}.about-image img{width:100%;max-height:600px;object-fit:cover}.about-image figcaption{color:var(--muted);font-size:11px;margin-top:10px}.about-copy>p{font-size:17px;color:var(--muted)}.about-copy h2{font-size:27px;margin:32px 0 18px}.timeline{padding:18px 0;border-top:1px solid var(--line)}.timeline h3{font-size:17px;margin:0 0 4px}.timeline p{font-size:12px;color:var(--muted);margin:0}.skill-columns{display:grid;grid-template-columns:1fr 1fr;gap:30px}.skill-columns h3{font-size:18px;margin:0 0 10px}.skill-columns p{font-size:13px;color:var(--muted)}
 .contact-layout{padding:25px 0 100px;display:grid;grid-template-columns:1.4fr 1fr;gap:90px}.contact-email{font-size:clamp(23px,3.2vw,38px);letter-spacing:-1px;border-bottom:1px solid var(--muted);padding-bottom:8px;display:inline-block}.contact-note{color:var(--muted);max-width:540px;margin:25px 0}.contact-socials{display:flex;flex-direction:column;align-items:start;gap:18px}
-.site-footer{border-top:1px solid var(--line);margin-top:20px}.footer-content{display:flex;justify-content:space-between;gap:35px;padding:40px 0}.footer-content h2{font-size:27px;margin-bottom:14px}.footer-socials{display:flex;gap:25px;align-items:center;font-size:12px}.copyright{font-size:10px;color:var(--muted);padding-bottom:22px}.skip{position:absolute;top:-70px;background:var(--ink);color:white;padding:10px;z-index:10}.skip:focus{top:10px}
+.site-footer{border-top:1px solid var(--line);margin-top:20px}.footer-content{display:flex;justify-content:space-between;gap:35px;padding:40px 0}.footer-content h2{font-size:27px;margin-bottom:14px}.footer-socials{display:flex;gap:25px;align-items:center;font-size:12px}.copyright{font-size:10px;color:var(--muted);padding-bottom:22px}.skip{position:absolute;top:-70px;background:var(--ink);color:var(--paper);padding:10px;z-index:10}.skip:focus{top:10px}
 @media(max-width:850px){.wrap{width:calc(100% - 48px)}.home-hero{gap:35px}.hero-photo img{height:280px}.work-item,.work-item.reverse{gap:35px}.work-copy h3{font-size:29px}.expertise-grid{gap:25px}.about-layout{gap:35px}.case-intro{gap:30px}.visual-photos img{height:300px}}
 @media(max-width:600px){.wrap{width:calc(100% - 36px)}.nav{min-height:92px;gap:15px;flex-wrap:wrap;padding:20px 0}.wordmark{font-size:20px}.nav-links{gap:21px;font-size:12px}.home-hero{grid-template-columns:1fr;padding:45px 0;gap:30px}.hero-photo{padding:0}.hero-photo img{height:300px}.home-hero h1{font-size:43px;letter-spacing:-1.8px}.hero-copy p{font-size:15px}.work-item,.work-item.reverse{grid-template-columns:1fr;gap:23px;margin-bottom:45px}.work-item.reverse .work-cover,.work-item.reverse .work-copy{order:initial}.work-copy h3{margin:10px 0;font-size:30px}.work-copy p{max-width:none;font-size:14px}.work-cover{aspect-ratio:1.3}.section-head h2{font-size:24px}.section-head .label{font-size:9px}.expertise-grid,.case-intro,.case-meta,.content-notes,.case-gallery,.poster-gallery,.about-layout,.contact-layout{grid-template-columns:1fr}.expertise-grid{gap:27px}.page-heading{padding:38px 0 28px}.page-heading h1{font-size:43px}.page-heading .lede{font-size:15px}.case-top{display:block}.case-top h1{font-size:43px}.case-top .subtitle{margin-top:16px}.case-intro{gap:18px;margin:30px 0}.case-intro h3{font-size:26px}.case-intro p{font-size:14px}.case-meta{gap:18px}.studio-pair img{height:auto}.visual-photos{grid-template-columns:1fr;gap:25px}.visual-photos img{height:auto;max-height:540px;object-fit:contain}.about-layout{gap:30px}.about-image img{max-height:420px}.contact-layout{gap:45px;padding-bottom:50px}.contact-email{font-size:24px}.footer-content{flex-direction:column;gap:22px}.footer-socials{flex-wrap:wrap}.case-next{font-size:12px}.poster-pair{padding:22px;gap:15px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -77,7 +79,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .storefront-gallery figcaption{font-size:11px;color:var(--muted);margin-top:12px}
 .studio-video-selections{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:24px}
 .studio-video-selection{min-width:0;padding:0;border:0}
-.studio-reel{display:block;width:100%;height:650px;border:1px solid var(--line);background:#fff;margin:20px 0 14px;border-radius:3px}
+.studio-reel{display:block;width:100%;height:650px;border:1px solid var(--line);background:var(--wash);margin:20px 0 14px;border-radius:3px}
 @media(max-width:600px){.studio-reel{height:620px}}
 .studio-video-selection h3{font-size:23px;margin:10px 0}
 #studio .media-pending{font-size:12px;color:var(--muted);margin:0}
@@ -87,6 +89,25 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .amori-gallery img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .amori-gallery figcaption{font-size:11px;color:var(--muted);margin-top:12px}
 @media(max-width:600px){.amori-gallery{grid-template-columns:1fr;gap:24px}}
+/* Image-first galleries: one line of copy, large images */
+.grid-3,.grid-4{display:grid;gap:12px;margin-bottom:12px}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grid-3 figure,.grid-4 figure{margin:0}.grid-3 img,.grid-4 img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--wash)}
+.grid-3.square img{aspect-ratio:1}
+.grid-3 figcaption,.grid-4 figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+.ecom-set{margin-top:28px}
+.video-stat{font-size:12px;color:var(--muted);margin:0}
+.pack-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);grid-template-rows:330px 260px;gap:12px}
+.pack-grid figure{margin:0;background:var(--wash);padding:22px;display:flex;flex-direction:column}
+.pack-grid img{width:100%;flex:1;min-height:0;object-fit:contain}
+.pack-grid figcaption{font-size:11px;color:var(--muted);margin-top:12px}
+.pack-front{grid-row:span 2}.pack-small{display:grid;grid-template-columns:.7fr 1fr 1fr;gap:12px}
+.pack-small figure:last-child{padding:0}.pack-small figure:last-child img{object-fit:cover}.pack-small figure:last-child figcaption{padding:0 14px 12px}
+.ui-gallery{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:320px 320px;gap:12px}
+.ui-gallery figure{margin:0}.ui-gallery img{width:100%;height:100%;object-fit:cover;background:#fff}
+.ui-gallery .ui-tall{grid-row:span 2}.ui-gallery figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+.ui-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}.ui-row figure{margin:0}.ui-row img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#fff}.ui-row figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+.wide-figure{margin:0}.wide-figure img{width:100%;height:auto;background:#fff}.wide-figure figcaption{font-size:11px;color:var(--muted);margin-top:10px}
+@media(max-width:600px){.grid-4{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr 1fr}.grid-3 figure:last-child:nth-child(odd){grid-column:span 2}.pack-grid,.ui-gallery,.ui-row{grid-template-columns:1fr}.pack-grid{grid-template-rows:auto}.pack-grid img{flex:none;height:auto;max-height:420px}.pack-front,.ui-gallery .ui-tall{grid-row:auto}.pack-small{grid-template-columns:1fr 1fr 1fr}}
 
 /* Pottery Master: visual UI/UX case study. */
 .pottery-overview{max-width:780px;color:var(--muted);font-size:16px;margin:24px 0 18px}
@@ -187,7 +208,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
 .video-cover.wide{max-width:860px;aspect-ratio:16/9;margin-top:0}
 .video-cover img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
 .video-cover:hover img{transform:scale(1.025)}
-.video-play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(52,56,48,.78);color:var(--paper);display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:4px;transition:background .2s}
+.video-play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(15,16,13,.72);color:#f5f2eb;display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:4px;transition:background .2s}
 .video-cover:hover .video-play{background:var(--green)}
 @media(max-width:600px){.studio-video-selections{grid-template-columns:1fr 1fr;gap:16px}.studio-video-selection h3{font-size:18px}.video-cover.reel{width:100%;margin:12px 0 10px}.video-play{width:48px;height:48px;margin:-24px 0 0 -24px;font-size:15px}}
 /* Studio reels as the studio's own video files (9:16). */
@@ -221,6 +242,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
   <article class="work-item reverse"><a class="work-cover vr" href="#pottery-master" aria-label="View Pottery Master project"><img src="assets/img/86117fb4e3.jpg" alt="Pottery Master virtual studio concept with pottery instructions" loading="lazy"></a><div class="work-copy"><span class="label">02 / UI &amp; 3D visual design</span><h3><a href="#pottery-master">Pottery Master</a></h3><div class="tags">UI design · 3D assets · Environment design</div><p>Every interface panel, 3D model and environment in a VR pottery-learning app, my NYU master’s thesis. The project received the Excellent in Prototyping Award.</p><a class="text-link" href="#pottery-master">Explore project <span aria-hidden="true">↗</span></a></div></article>
   <article class="work-item reverse"><a class="work-cover ello" href="#ello" aria-label="View Read with Ello project"><img src="assets/img/40b296dbda.jpg" alt="Ello reading platform, shown as project context" loading="lazy"></a><div class="work-copy"><span class="label">03 / Illustration</span><h3><a href="#ello">Read with Ello</a></h3><div class="tags">Children’s books · Visual storytelling · AI tools</div><p>Illustration work for a children’s reading platform, combining Adobe tools and generative AI in a commercial creative workflow.</p><a class="text-link" href="#ello">Explore project <span aria-hidden="true">↗</span></a></div></article>
   <article class="work-item"><a class="work-cover" href="#graphic-design" aria-label="View Selected Graphic Design"><div class="poster-pair"><img src="assets/img/34b8a921af.jpg" alt="ECT Design Expo spring poster" loading="lazy"><img src="assets/img/4e9cf9a530.jpg" alt="ECT Career Series poster" loading="lazy"></div></a><div class="work-copy"><span class="label">04 / Visual communication</span><h3><a href="#graphic-design">Selected Graphic Design</a></h3><div class="tags">Posters · Typography · Digital graphics</div><p>Visuals for exhibitions, events and educational communications, with an emphasis on clear hierarchy and expressive composition.</p><a class="text-link" href="#graphic-design">Explore collection <span aria-hidden="true">↗</span></a></div></article>
+  <article class="work-item reverse"><a class="work-cover" href="#ui-visuals" aria-label="View UI and App Visuals"><img src="assets/img/ui-app_dog_hand.jpg" alt="Pet-care app home screen held in a hand" loading="lazy"></a><div class="work-copy"><span class="label">05 / UI &amp; app visuals</span><h3><a href="#ui-visuals">UI &amp; App Visuals</a></h3><div class="tags">App UI · E-learning · Device mockups</div><p>App and e-learning interfaces from NYU projects, designed in Figma.</p><a class="text-link" href="#ui-visuals">Explore project <span aria-hidden="true">↗</span></a></div></article>
 
   </div>
 </section>
@@ -228,23 +250,59 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
   <div class="page-heading"><a class="back" href="#work">← Selected work</a><div class="case-top"><div><span class="label">01 / Brand identity</span><h1 id="studio-title">Kemeng Studio</h1></div><p class="subtitle">Brand identity, Shopify website<br>&amp; content creation</p></div>
   <p class="studio-overview">An independent pottery studio I founded in London in 2024, while living there from 2024 to 2026. I design and make the ceramics, run the Shopify store, and create the visual and written content used to share and sell my work.</p></div>
   <dl class="case-meta"><div><dt>My role</dt><dd>Founder &amp; brand designer</dd></div><div><dt>Scope</dt><dd>Product design &amp; production · Shopify website launch · Brand identity · Campaign content</dd></div><div><dt>Timeline</dt><dd>October 2024 — Present</dd></div></dl>
+  <section class="studio-chapter" aria-labelledby="studio-photo-title">
+    <div class="studio-chapter-heading"><span class="label">01 / Product photography</span><h2 id="studio-photo-title">Terracotta Friends</h2><p>5 one-of-a-kind pieces, $48–103. One planned shoot for every channel · 40% sell-through.</p></div>
+    <div class="grid-3">
+      <figure><img src="assets/img/tf-l2-mood1.jpg" alt="Terracotta pots with plants in hard sunlight" loading="lazy"><figcaption>Mood · banner &amp; social</figcaption></figure>
+      <figure><img src="assets/img/tf-l2-mood2.jpg" alt="Polka-dot pot with a plant and long shadows" loading="lazy"></figure>
+      <figure><img src="assets/img/tf-l2-mood3.jpg" alt="Candle holder in raking light" loading="lazy"></figure>
+    </div>
+    <div class="grid-4">
+      <figure><img src="assets/img/tf-l2-tripod.jpg" alt="Tripod vessel on grey linen" loading="lazy"><figcaption>Studio · product pages</figcaption></figure>
+      <figure><img src="assets/img/tf-l2-dot.jpg" alt="Polka-dot belly pot on grey linen" loading="lazy"></figure>
+      <figure><img src="assets/img/tf-l2-spike.jpg" alt="Spike pot with handles on grey linen" loading="lazy"></figure>
+      <figure><img src="assets/img/tf-l2-loop.jpg" alt="Tripod pot with a loop handle on grey linen" loading="lazy"></figure>
+    </div>
+    <div class="grid-3">
+      <figure><img src="assets/img/tf-l2-stamp.jpg" alt="Close-up of the maker's mark stamped into terracotta" loading="lazy"><figcaption>Detail · feature highlights</figcaption></figure>
+      <figure><img src="assets/img/tf-l2-ring.jpg" alt="Close-up of a ring handle and clay texture" loading="lazy"></figure>
+      <figure><img src="assets/img/tf-l2-candle.jpg" alt="Terracotta candle holder on grey linen" loading="lazy"></figure>
+    </div>
+  </section>
   <section class="studio-chapter" aria-labelledby="studio-website-title">
-    <div class="studio-chapter-heading"><span class="label">01 / Website</span><h2 id="studio-website-title">Shopify Website &amp; E-commerce</h2><p>I built the studio’s Shopify website and visual identity, bringing together my product photography and copy to introduce each collection and sell handmade pieces online.</p><a class="text-link" href="https://kemengstudio.com/" target="_blank" rel="noopener noreferrer">Visit kemengstudio.com ↗</a></div>
+    <div class="studio-chapter-heading"><span class="label">02 / Website</span><h2 id="studio-website-title">Shopify Website &amp; E-commerce</h2><p>I built the studio’s Shopify website and visual identity, bringing together my product photography and copy to introduce each collection and sell handmade pieces online.</p><a class="text-link" href="https://kemengstudio.com/" target="_blank" rel="noopener noreferrer">Visit kemengstudio.com ↗</a></div>
     <div class="storefront-gallery">
       <figure class="storefront-desktop"><img src="assets/img/542fbe8514.jpg" width="2880" height="1556" alt="Kemeng Studio Shopify homepage on desktop, showing navigation, Terracotta Drop collection imagery and the shop section" loading="lazy"><figcaption>Desktop website</figcaption></figure>
       <figure class="storefront-mobile"><img src="assets/img/aea0893990.jpg" width="1179" height="2556" alt="Kemeng Studio Shopify homepage on mobile, showing the collection introduction and two-column product cards" loading="lazy"><figcaption>Mobile website</figcaption></figure>
     </div>
+    <div class="grid-3 square ecom-set">
+      <figure><img src="assets/img/ring-main.jpg" alt="Ring vase with flowers on a pure white background" loading="lazy"><figcaption>Main image · pure white, no text</figcaption></figure>
+      <figure><img src="assets/img/ring-scale.jpg" alt="Ring vase held in one hand to show its size" loading="lazy"><figcaption>Scale · in hand</figcaption></figure>
+      <figure><img src="assets/img/ring-lifestyle.jpg" alt="Ring vase on a glass table in dappled light" loading="lazy"><figcaption>Lifestyle · AI-enhanced image quality</figcaption></figure>
+    </div>
   </section>
   <section class="studio-chapter" aria-labelledby="studio-content-title">
-    <div class="studio-chapter-heading"><span class="label">02 / Content creation</span><h2 id="studio-content-title">Studio Stories &amp; AI Video</h2><p>I create photos, videos and written content for Instagram and Xiaohongshu, sharing the making process and new ceramic work. I also experiment with AI-generated video for the studio’s brand content.</p></div>
+    <div class="studio-chapter-heading"><span class="label">03 / Content creation</span><h2 id="studio-content-title">Studio Stories &amp; AI Video</h2><p>I create photos, videos and written content for Instagram and Xiaohongshu, sharing the making process and new ceramic work. I also experiment with AI-generated video for the studio’s brand content.</p></div>
     <div class="studio-video-selections">
-      <div class="studio-video-selection"><span class="label">Instagram Reel</span><h3>Studio content</h3><video class="studio-video" src="assets/video/studio-content.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Studio content: making ceramics at the wheel in the studio"></video><a class="text-link" href="https://www.instagram.com/reel/DUx3_wQDUwg/" target="_blank" rel="noopener noreferrer">Watch on Instagram ↗</a></div>
+      <div class="studio-video-selection"><span class="label">Instagram Reel</span><h3>Studio content</h3><p class="video-stat">40.3K views · 341 shares</p><video class="studio-video" src="assets/video/studio-content.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Studio content: making ceramics at the wheel in the studio"></video><a class="text-link" href="https://www.instagram.com/reel/DUx3_wQDUwg/" target="_blank" rel="noopener noreferrer">Watch on Instagram ↗</a></div>
       <div class="studio-video-selection"><span class="label">AI-generated video</span><h3>Creative experiments</h3><video class="studio-video" src="assets/video/creative-experiments.mp4" autoplay muted loop playsinline preload="metadata" controls aria-label="Creative experiments: AI-generated video of a white ceramic vase"></video><a class="text-link" href="https://www.instagram.com/reel/DZcBPsuuPPe/" target="_blank" rel="noopener noreferrer">Watch on Instagram ↗</a></div>
     </div>
     <a class="text-link" href="https://www.instagram.com/kemeng.studio/" target="_blank" rel="noopener noreferrer">View @kemeng.studio ↗</a>
   </section>
+  <section class="studio-chapter" aria-labelledby="studio-pack-title">
+    <div class="studio-chapter-heading"><span class="label">04 / Packaging</span><h2 id="studio-pack-title">One of one, wrapped by hand</h2><p>Card, sticker, swing tag and tissue paper, print-ready with bleed and cut lines. Designed, not yet produced.</p></div>
+    <div class="pack-grid">
+      <figure class="pack-front"><img src="assets/img/pk-card-front.jpg" alt="A6 card front with the Kemeng Studio wordmark and a studio illustration" loading="lazy"><figcaption>A6 card · front</figcaption></figure>
+      <figure><img src="assets/img/pk-card-back.jpg" alt="Terracotta card back reading This piece is one of one, with lines to write on" loading="lazy"><figcaption>Back · certificate</figcaption></figure>
+      <div class="pack-small">
+        <figure><img src="assets/img/pk-swing-tag.jpg" alt="Swing tag with the Kemeng Studio wordmark" loading="lazy"><figcaption>Swing tag</figcaption></figure>
+        <figure><img src="assets/img/pk-sticker.jpg" alt="Die-cut sticker of the illustrated maker with its cut line" loading="lazy"><figcaption>Die-cut sticker</figcaption></figure>
+        <figure><img src="assets/img/pk-tissue.jpg" alt="Tissue paper pattern of illustrated studio objects" loading="lazy"><figcaption>Tissue paper</figcaption></figure>
+      </div>
+    </div>
+  </section>
   <section class="studio-chapter" aria-labelledby="studio-retail-title">
-    <div class="studio-chapter-heading"><span class="label">03 / Offline collaboration</span><h2 id="studio-retail-title">Kemeng Studio × Amori</h2><p>I partnered with London matcha space Amori on offline retail and displays, bringing my handmade ceramics into a physical retail setting.</p></div>
+    <div class="studio-chapter-heading"><span class="label">05 / Offline collaboration</span><h2 id="studio-retail-title">Kemeng Studio × Amori</h2><p>I partnered with London matcha space Amori on offline retail and displays, bringing my handmade ceramics into a physical retail setting.</p></div>
     <div class="amori-gallery">
       <figure><img id="cover-amori" src="assets/img/4b6f41c6d2.jpg" alt="Handmade ceramic pieces displayed on wooden shelves at Amori" loading="lazy"><figcaption>Ceramics on display</figcaption></figure>
       <figure><img src="assets/img/e4b21aef36.jpg" alt="Street view of the London matcha space with a curved glass shopfront" loading="lazy"><figcaption>Amori, London</figcaption></figure>
@@ -299,7 +357,7 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
   </section>
   <div class="case-next"><a href="#work">← All work</a><a href="#ello">Next: Read with Ello →</a></div>
 </section>
-<section id="ello" class="page" aria-labelledby="ello-title"><div class="page-heading"><a class="back" href="#work">← Selected work</a><div class="case-top"><div><span class="label">03 / Illustration</span><h1 id="ello-title">Read with Ello</h1></div><p class="subtitle">Children’s books<br>&amp; AI-assisted illustration</p></div></div><figure style="background:#dcece5;padding:50px"><img src="assets/img/40b296dbda.jpg" alt="Ello reading platform, shown as project context" style="margin:auto;width:min(700px,100%)"><figcaption style="font-size:11px;color:var(--muted);text-align:center;margin-top:20px">Ello reading platform · Project context</figcaption></figure>
+<section id="ello" class="page" aria-labelledby="ello-title"><div class="page-heading"><a class="back" href="#work">← Selected work</a><div class="case-top"><div><span class="label">03 / Illustration</span><h1 id="ello-title">Read with Ello</h1></div><p class="subtitle">Children’s books<br>&amp; AI-assisted illustration</p></div></div><figure style="background:#1e2a26;padding:50px"><img src="assets/img/40b296dbda.jpg" alt="Ello reading platform, shown as project context" style="margin:auto;width:min(700px,100%)"><figcaption style="font-size:11px;color:var(--muted);text-align:center;margin-top:20px">Ello reading platform · Project context</figcaption></figure>
 <div class="case-body"><div class="case-intro"><h3>Illustration for<br>young readers.</h3><div><p>As a freelance graphic designer for Ello, I delivered over 40 illustrations for children’s books using Photoshop, Illustrator and AI tools.</p><p>The work brought together illustration and visual storytelling for a children’s reading experience.</p><a class="text-link" href="https://dribbble.com/MoMoZhai1998/shots" target="_blank" rel="noopener noreferrer">Browse illustration work on Dribbble ↗</a></div></div></div>
           
 <dl class="case-meta"><div><dt>Role</dt><dd>Freelance graphic designer</dd></div><div><dt>Tools</dt><dd>Photoshop · Illustrator · AI tools</dd></div><div><dt>Timeline</dt><dd>July — August 2023</dd></div></dl><section class="ello-books" aria-label="Selected books"><div class="ello-book"><div class="ello-book-head"><span class="label">Book 01</span><h3>Bat Pups</h3><p>Two bat pups exploring the forest at night.</p></div><div class="ello-pages"><figure><img src="assets/img/ello-bat-cover.jpg" alt="Bat Pups cover: two cartoon bats flying against a pink sunset sky" loading="lazy" width="1000" height="1000"><figcaption>Cover</figcaption></figure><figure><img src="assets/img/ello-bat-p3.jpg" alt="Two bats hanging and flapping in a dark forest" loading="lazy" width="1000" height="1000"><figcaption>Page 3</figcaption></figure><figure><img src="assets/img/ello-bat-p6.jpg" alt="A bat gliding past a full moon above a fallen log" loading="lazy" width="1000" height="1000"><figcaption>Page 6</figcaption></figure><figure><img src="assets/img/ello-bat-p9.jpg" alt="Two bats flying through a moonlit forest with flowers" loading="lazy" width="1000" height="1000"><figcaption>Page 9</figcaption></figure></div></div><div class="ello-book"><div class="ello-book-head"><span class="label">Book 02</span><h3>A Game of Chase</h3><p>A cat and a mouse in a playful chase around the house.</p></div><div class="ello-pages"><figure><img src="assets/img/ello-chase-cover.jpg" alt="A Game of Chase cover: a cat and mouse by a cosy fireplace" loading="lazy" width="1000" height="1000"><figcaption>Cover</figcaption></figure><figure><img src="assets/img/ello-chase-p3.jpg" alt="A cat chasing a mouse across a bright kitchen" loading="lazy" width="1000" height="1000"><figcaption>Page 3</figcaption></figure><figure><img src="assets/img/ello-chase-p6.jpg" alt="Split scene of a mouse in a glass jar and a cat sleeping by the fire" loading="lazy" width="1000" height="1000"><figcaption>Page 6</figcaption></figure><figure><img src="assets/img/ello-chase-p9.jpg" alt="A cat in a cage with the mouse sitting outside" loading="lazy" width="1000" height="1000"><figcaption>Page 9</figcaption></figure></div></div><div class="ello-book"><div class="ello-book-head"><span class="label">Book 03</span><h3>Too Can Hop</h3><p>A grasshopper on a summer camping trip.</p></div><div class="ello-pages"><figure><img src="assets/img/ello-hop-cover.jpg" alt="Too Can Hop cover: a grasshopper on a red gingham picnic table" loading="lazy" width="1000" height="1000"><figcaption>Cover</figcaption></figure><figure><img src="assets/img/ello-hop-p3.jpg" alt="A grasshopper beside a green tent and campfire wood" loading="lazy" width="1000" height="1000"><figcaption>Page 3</figcaption></figure><figure><img src="assets/img/ello-hop-p6.jpg" alt="A grasshopper on a pot on top of a camping grill" loading="lazy" width="1000" height="1000"><figcaption>Page 6</figcaption></figure><figure><img src="assets/img/ello-hop-p9.jpg" alt="A grandmother hiking past a tent with a grasshopper on top" loading="lazy" width="1000" height="1000"><figcaption>Page 9</figcaption></figure></div></div></section><div class="case-next"><a href="#work">← All work</a><a href="#graphic-design">Next: Graphic Design →</a></div></section>
@@ -314,7 +372,21 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-weight:400}h1{font-size:clamp(42px,5
               </div>
             </div>
           
-<div class="case-next"><a href="#work">← All work</a><a href="#studio">Next: Kemeng Studio →</a></div></section>
+<div class="case-next"><a href="#work">← All work</a><a href="#ui-visuals">Next: UI &amp; App Visuals →</a></div></section>
+<section id="ui-visuals" class="page" aria-labelledby="ui-title">
+  <div class="page-heading"><a class="back" href="#work">← Selected work</a><span class="label">05 / UI &amp; app visuals</span><h1 id="ui-title">UI &amp; App Visuals</h1><p class="lede">App and e-learning interfaces from NYU projects, designed in Figma.</p></div>
+  <div class="ui-gallery">
+    <figure class="ui-tall"><img src="assets/img/ui-app_dog_hand.jpg" alt="Pet-care app home screen held in a hand" loading="lazy"></figure>
+    <figure><img src="assets/img/ui-370j_screens.jpg" alt="370 Jay Connection social app screens for finding friends and events" loading="lazy"></figure>
+    <figure><img src="assets/img/ui-ireaddog_devices.jpg" alt="I Read Dog e-learning course on laptop and phones" loading="lazy" style="object-fit:contain"></figure>
+  </div>
+  <div class="ui-row">
+    <figure><img src="assets/img/ui-app_calendar_hand.jpg" alt="Scheduling app calendar held in a hand" loading="lazy"><figcaption>Scheduling app</figcaption></figure>
+    <figure><img src="assets/img/ui-app_milk.jpg" alt="Smart-device app connecting to a milk bottle sensor" loading="lazy"><figcaption>Smart-device app</figcaption></figure>
+    <figure><img src="assets/img/ui-ireaddog_storyboard.jpg" alt="Six-frame illustrated storyboard of a dog owner misreading her dog" loading="lazy" style="object-fit:contain"><figcaption>I Read Dog · storyboard illustration</figcaption></figure>
+  </div>
+  <div class="case-next"><a href="#work">← All work</a><a href="#studio">Next: Kemeng Studio →</a></div>
+</section>
 </main>
 <footer class="site-footer"><div class="wrap"><div class="footer-content"><div><h2>Let’s work together.</h2><a class="text-link" href="mailto:kemengzhai@gmail.com">kemengzhai@gmail.com ↗</a></div><div class="footer-socials"><a class="text-link" href="assets/Kemeng_Zhai_Resume.pdf" download="Kemeng_Zhai_Resume.pdf">Download Resume ↓</a><a href="https://www.instagram.com/kemeng.studio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/in/kemeng-zhai/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div><div class="copyright">© 2026 Kemeng Zhai · Hong Kong</div></div></footer>
 </body>
